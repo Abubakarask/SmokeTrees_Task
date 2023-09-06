@@ -5,14 +5,11 @@ const routes = require("./routes/routes");
 const { connectDatabase } = require("./config/database");
 const { logger } = require("./logger/lgs");
 
-console.log("dhbdh");
 require("dotenv").config({ path: "config/config.env" });
 connectDatabase();
-console.log("djdhb");
 
 const PORT = process.env.PORT || 3600;
 const server = express();
-console.log(PORT);
 
 //Using Middlewares
 server.use(express.json());
